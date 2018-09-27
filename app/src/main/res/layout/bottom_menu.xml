@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <LinearLayout
+        android:id="@+id/ll_bm_live"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/bm_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_home11" />
+
+        <TextView
+            android:id="@+id/bm_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="学习首页"
+            android:textSize="20dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_bm_trends"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/bm_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_home21" />
+
+        <TextView
+            android:id="@+id/bm_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发布课程"
+            android:textSize="20dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_bm_play"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/bm_iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_home31"
+            />
+
+        <TextView
+            android:id="@+id/bm_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="交流圈"
+            android:textSize="20dp"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_bm_my"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/bm_iv4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_home41" />
+
+        <TextView
+            android:id="@+id/bm_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="20dp"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>
+

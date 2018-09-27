@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rtmppush.hx.com.rtmppush"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="datasource.User"
+        tools:replace="icon,label,theme"
+        android:allowBackup="true"
+        android:icon="@drawable/mylogo"
+        android:label="OurLive"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="mainactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.rtmppush" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_start">
+            <intent-filter>
+                <action android:name="android.intent.action.start" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="title_activity_home">
+            <intent-filter>
+                <action android:name="android.intent.action.Home" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".fragment.FreeLiveActivity"
+            android:label="title_activity_freelive">
+            <intent-filter>
+                <action android:name="android.intent.action.freelive" />
+            </intent-filter>
+            >
+
+        </activity>
+        <activity
+            android:name=".Home2Activity"
+            android:label="title_activity_home2">
+            <intent-filter>
+                <action android:name="android.intent.action.Home2" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home3Activity"
+            android:label="title_activity_home3">
+            <intent-filter>
+                <action android:name="android.intent.action.Home3" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home4Activity"
+            android:label="title_activity_home4">
+            <intent-filter>
+                <action android:name="android.intent.action.Home4" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".LoginActivity">
+            android:label="@string/title_activity_start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FreeVideoActivity">
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensor"
+            <intent-filter>
+                <action android:name="android.intent.action.freev" />
+
+                <category android:name="android.intent.category.freev" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PayVideoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.freev" />
+
+                <category android:name="android.intent.category.freev" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecordActivity"></activity>
+    </application>
+
+</manifest>

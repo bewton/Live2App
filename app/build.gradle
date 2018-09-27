@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "rtmppush.hx.com.rtmppush"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']  /**在libs文件夹下找so文件*/
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs' /**在libs文件夹下找aar文件*/
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/gson-2.8.0.jar')
+    testCompile 'junit:junit:4.12'
+    compile project(':liveRtmpPushSDK')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile(name: 'ijkplayer-java-release', ext: 'aar')
+
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+
+}

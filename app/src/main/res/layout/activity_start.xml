@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="rtmppush.hx.com.rtmppush.StartActivity">
+
+    <EditText
+        android:layout_width="200dp"
+
+        android:layout_height="wrap_content"
+        android:id="@+id/livename"
+        android:hint="直播名称"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/livecontent"
+        android:hint="直播内容"
+        android:layout_margin="5dp"/>
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liveteacher"
+        android:hint="主讲老师"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liveicon"
+        android:hint="课程图片"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liveurl"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开播"
+        android:background="@color/lightcoral"
+        android:id="@+id/startRtmpButton"
+        android:layout_margin="5dp" />
+</LinearLayout>
